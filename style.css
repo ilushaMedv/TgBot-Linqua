@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f8fb;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 30px;
+  background-color: #ffffff;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex: 1;
+}
+
+.dropdown {
+  display:none;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2aabee;
+}
+
+.lang {
+  font-size: 16px;
+  color: #000000;
+}
+
+.nav a:hover {
+  color: #2aabee;
+}
+
+#button1 {
+  background-color: #2aabee;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.header .button {
+  background-color: #ffffff;
+  border: 2px solid #2aabee;
+  color: #2aabee;
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+
+main {
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px 50px;
+}
+
+section {
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.Button {
+  display: inline-block;
+  background-color: #2aabee;
+  color: #ffffff;
+  padding: 14px 30px;
+  border-radius: 25px;
+  font-size: 17px;
+}
+
+.Button:hover,
+.button:hover {
+  background-color: #229ed9;
+  color: #ffffff;
+}
+
+#about_us {
+  text-align: center;
+  background-color: #2aabee;
+  color: #ffffff;
+  padding: 60px 20px;
+  border-radius: 20px;
+}
+
+#about_us .Button {
+  background-color: #ffffff;
+  color: #2aabee;
+}
+
+#lang_block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#lang_block h2 {
+  width: 100%;
+}
+
+.style-block {
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 180px;
+  text-align: center;
+}
+
+.style-block a {
+  display: block;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.style-block:hover {
+  background-color: #2aabee;
+}
+
+.style-block:hover a {
+  color: #ffffff;
+}
+
+.test_lang h2 {
+  margin-bottom: 20px;
+}
+
+.test_lang {
+  text-align: center;
+  background-color: #ffffff; 
+  border-radius: 20px;
+  padding: 40px 20px;
+}
+
+.example {
+  display: block;
+  width: 100%;          /* занимает целую строку, видео уходят вниз */
+  margin-top: 20px;
+  color: #2aabee;
+  font-weight: bold;
+}
+
+.video {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .dropdown {
+    display: block;
+  }
+
+  .nav .logo {
+    display: block;
+  }
+}
